@@ -15,6 +15,8 @@ class ARENABATTLE_API AABPlayerController : public APlayerController
 	GENERATED_BODY()
 	
 public : 
+	virtual void BeginPlay() override;
+
 	virtual void PostInitializeComponents() override;
 	// 플레이어 컨트롤러가 폰에 빙의되는 시점
 	virtual void OnPossess(APawn* aPawn) override;
